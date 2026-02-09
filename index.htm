@@ -3,80 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta Velocidad - Licitación Oficial</title>
+    <title>Alta Velocidad - Estadísticas y Videos</title>
     <style>
         body { background-color: #020617; color: #f8fafc; font-family: 'Arial', sans-serif; margin: 0; text-align: center; }
-        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 20px; box-shadow: 0 4px 15px #0074D966; }
+        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 15px; }
         marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
-        
-        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 15px; gap: 15px; }
-        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; box-sizing: border-box; }
-        
-        /* Video/Foto Jugada del Día */
-        .video-box { width: 95%; margin: 10px auto; background: #000; border: 3px solid #7FDBFF; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 15px; overflow: hidden; }
-        
+        .video-container { width: 95%; max-width: 800px; margin: 15px auto; border: 3px solid #7FDBFF; border-radius: 15px; overflow: hidden; background: #000; box-shadow: 0 0 20px #0074D9; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 10px; gap: 10px; }
+        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 10px; width: 45%; min-width: 300px; box-sizing: border-box; }
         table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
-        th { background: #0074D9; padding: 8px; }
-        td { border-bottom: 1px solid #1e293b; padding: 8px; }
-
-        .invitacion { background: #1e293b; border-left: 5px solid #7FDBFF; text-align: left; padding: 10px; margin-top: 10px; }
-        .foto-mariche { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #7FDBFF; float: right; }
-        
-        .next-game { font-weight: bold; color: #7FDBFF; font-size: 1.1em; }
-        .footer { padding: 20px; background: #000; color: #0074D9; font-weight: bold; border-top: 2px solid #0074D9; margin-top: 20px; }
+        th { background: #0074D9; padding: 6px; color: white; }
+        td { border-bottom: 1px solid #1e293b; padding: 6px; }
+        .highlight { color: #7FDBFF; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>🚀 ALTA VELOCIDAD</h1>
-    </div>
+    <div class="header"><h1>🚀 ALTA VELOCIDAD</h1></div>
+    <marquee>ESTADÍSTICAS EN VIVO - PATROCINADO POR ALEXGE TECNOLOGÍA 💰</marquee>
 
-    <marquee>¡LA JUGADA DEL DÍA! - PRÓXIMOS ENCUENTROS - NACIONAL CENTRAL 69 Y MÁS</marquee>
-
-    <div class="video-box">
-        <p>🎬 [AQUÍ VA EL VÍDEO O FOTO DE LA JUGADA]</p>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/tXbPI-ySpxQ?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
+    </div>
 
     <div class="main-container">
-        
         <div class="box">
-            <h3>🏆 LÍDERES BATEO</h3>
+            <h3>🏆 LÍDER LANZADOR (JG)</h3>
+            <table>
+                <tr><th>LANZADOR</th><th>JG</th></tr>
+                <tr><td>Julio Mariche</td><td class="highlight">10</td></tr>
+                <tr><td>Alexis Piña</td><td>9</td></tr>
+                <tr><td>José Goncalvez</td><td>8</td></tr>
+            </table>
+        </div>
+
+        <div class="box">
+            <h3>🔥 LÍDER K (PONCHES)</h3>
+            <table>
+                <tr><th>LANZADOR</th><th>K</th></tr>
+                <tr><td>José Goncalvez</td><td class="highlight">78</td></tr>
+                <tr><td>Pedro Martínez</td><td>50</td></tr>
+            </table>
+        </div>
+
+        <div class="box">
+            <h3>⚾ LÍDER BATE (AVG)</h3>
             <table>
                 <tr><th>JUGADOR</th><th>AVG</th></tr>
-                <tr><td>Líder 1</td><td>.450</td></tr>
-                <tr><td>Líder 2</td><td>.420</td></tr>
+                <tr><td>José Tenía</td><td class="highlight">.400</td></tr>
+                <tr><td>José Barragán</td><td>.388</td></tr>
             </table>
         </div>
 
         <div class="box">
-            <h3>📅 PRÓXIMO JUEGO</h3>
-            <p class="next-game">CARABOBO vs GUARICO</p>
-            <p>📍 Sede: Guarico<br>🗓️ 16/02/26 | ⏰ 10:00 AM</p>
-        </div>
-
-        <div class="box">
-            <h3>🔥 LÍDERES JONRONES</h3>
+            <h3>💪 LÍDER CI (IMPULSADAS)</h3>
             <table>
-                <tr><th>JUGADOR</th><th>HR</th></tr>
-                <tr><td>Líder 1</td><td>12</td></tr>
-                <tr><td>Líder 2</td><td>10</td></tr>
+                <tr><th>JUGADOR</th><th>CI</th></tr>
+                <tr><td>Alexis Piña</td><td class="highlight">100</td></tr>
+                <tr><td>Julio Mariche</td><td>10</td></tr>
             </table>
         </div>
-
-        <div class="box">
-            <img src="URL_FOTO_MARICHE" alt="Julio Mariche" class="foto-mariche">
-            <div class="invitacion">
-                <strong>Julio Mariche</strong> te invita al:
-                <p style="color:#7FDBFF">CAMPEONATO NACIONAL CENTRAL 69 Y MÁS</p>
-            </div>
-        </div>
-
     </div>
 
-    <div class="footer">
-        SISTEMA DESARROLLADO POR ALEXGE TECNOLOGÍA 💰
-    </div>
+    <div style="padding:20px; color:#0074D9; font-weight:bold;">SISTEMA ALEXGE - VALENCIA, VENEZUELA 🇻🇪</div>
 
 </body>
 </html>
