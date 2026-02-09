@@ -3,75 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta Velocidad - Alexis Piña</title>
+    <title>Alta Velocidad - Licitación Oficial</title>
     <style>
-        body { background-color: #050a15; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; text-align: center; }
-        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 30px; box-shadow: 0 4px 15px rgba(0,116,217,0.4); }
+        body { background-color: #020617; color: #f8fafc; font-family: 'Arial', sans-serif; margin: 0; text-align: center; }
+        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 20px; box-shadow: 0 4px 15px #0074D966; }
+        marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
         
-        /* Cintillo que se mueve */
-        marquee { background: #0074D9; color: white; padding: 10px; font-weight: bold; font-size: 1.2em; border-bottom: 2px solid #001f3f; }
+        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 15px; gap: 15px; }
+        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; box-sizing: border-box; }
         
-        .contenedor { padding: 20px; max-width: 95%; margin: auto; }
-        h2 { color: #7FDBFF; border-bottom: 2px solid #0074D9; display: inline-block; padding-bottom: 5px; }
+        /* Video/Foto Jugada del Día */
+        .video-box { width: 95%; margin: 10px auto; background: #000; border: 3px solid #7FDBFF; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 15px; overflow: hidden; }
         
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #0a192f; border-radius: 8px; overflow: hidden; }
-        th { background-color: #0074D9; color: white; padding: 12px; }
-        td { border: 1px solid #1e3a5f; padding: 10px; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+        th { background: #0074D9; padding: 8px; }
+        td { border-bottom: 1px solid #1e293b; padding: 8px; }
+
+        .invitacion { background: #1e293b; border-left: 5px solid #7FDBFF; text-align: left; padding: 10px; margin-top: 10px; }
+        .foto-mariche { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #7FDBFF; float: right; }
         
-        .publicidad { border: 3px dashed #0074D9; margin: 30px; padding: 25px; border-radius: 15px; background: rgba(0,116,217,0.1); }
-        .alexge { color: #7FDBFF; font-size: 1.5em; font-weight: bold; }
+        .next-game { font-weight: bold; color: #7FDBFF; font-size: 1.1em; }
+        .footer { padding: 20px; background: #000; color: #0074D9; font-weight: bold; border-top: 2px solid #0074D9; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1>🚀 ALTA VELOCIDAD</h1>
-        <p>Gestión Deportiva - Alexis Piña</p>
     </div>
 
-    <marquee scrollamount="8">¡BIENVENIDOS AL LÍDER EN GESTIÓN DEPORTIVA! RESULTADOS EN VIVO - PATROCINADO POR ALEXGE</marquee>
+    <marquee>¡LA JUGADA DEL DÍA! - PRÓXIMOS ENCUENTROS - NACIONAL CENTRAL 69 Y MÁS</marquee>
 
-    <div class="contenedor">
+    <div class="video-box">
+        <p>🎬 [AQUÍ VA EL VÍDEO O FOTO DE LA JUGADA]</p>
+        </div>
+
+    <div class="main-container">
         
-        <h2>1. TABLA DE POSICIONES</h2>
-        <table>
-            <tr><th>EQUIPO</th><th>JJ</th><th>JG</th><th>JP</th><th>AVE</th></tr>
-            <tr><td>Equipo 1</td><td>0</td><td>0</td><td>0</td><td>.000</td></tr>
-            <tr><td>Equipo 2</td><td>0</td><td>0</td><td>0</td><td>.000</td></tr>
-            <tr><td>Equipo 3</td><td>0</td><td>0</td><td>0</td><td>.000</td></tr>
-        </table>
+        <div class="box">
+            <h3>🏆 LÍDERES BATEO</h3>
+            <table>
+                <tr><th>JUGADOR</th><th>AVG</th></tr>
+                <tr><td>Líder 1</td><td>.450</td></tr>
+                <tr><td>Líder 2</td><td>.420</td></tr>
+            </table>
+        </div>
 
-        <h2>2. LÍDERES BATEO (TOP 3)</h2>
-        <table>
-            <tr><th>JUGADOR</th><th>EQUIPO</th><th>AVE</th></tr>
-            <tr><td>---</td><td>---</td><td>.000</td></tr>
-            <tr><td>---</td><td>---</td><td>.000</td></tr>
-            <tr><td>---</td><td>---</td><td>.000</td></tr>
-        </table>
+        <div class="box">
+            <h3>📅 PRÓXIMO JUEGO</h3>
+            <p class="next-game">CARABOBO vs GUARICO</p>
+            <p>📍 Sede: Guarico<br>🗓️ 16/02/26 | ⏰ 10:00 AM</p>
+        </div>
 
-        <h2>3. LÍDERES PITCHER (TOP 3)</h2>
-        <table>
-            <tr><th>LANZADOR</th><th>EQUIPO</th><th>EFEC.</th></tr>
-            <tr><td>---</td><td>---</td><td>0.00</td></tr>
-            <tr><td>---</td><td>---</td><td>0.00</td></tr>
-            <tr><td>---</td><td>---</td><td>0.00</td></tr>
-        </table>
+        <div class="box">
+            <h3>🔥 LÍDERES JONRONES</h3>
+            <table>
+                <tr><th>JUGADOR</th><th>HR</th></tr>
+                <tr><td>Líder 1</td><td>12</td></tr>
+                <tr><td>Líder 2</td><td>10</td></tr>
+            </table>
+        </div>
 
-        <h2>4. LÍDERES JONRONES (TOP 3)</h2>
-        <table>
-            <tr><th>BATEADOR</th><th>EQUIPO</th><th>HR</th></tr>
-            <tr><td>---</td><td>---</td><td>0</td></tr>
-            <tr><td>---</td><td>---</td><td>0</td></tr>
-            <tr><td>---</td><td>---</td><td>0</td></tr>
-        </table>
+        <div class="box">
+            <img src="URL_FOTO_MARICHE" alt="Julio Mariche" class="foto-mariche">
+            <div class="invitacion">
+                <strong>Julio Mariche</strong> te invita al:
+                <p style="color:#7FDBFF">CAMPEONATO NACIONAL CENTRAL 69 Y MÁS</p>
+            </div>
+        </div>
 
     </div>
 
-    <div class="publicidad">
-        <p>💰 ESPACIO PARA PUBLICIDAD Y VIDEO 4K DISPONIBLE</p>
-        <p class="alexge">PATROCINA: ALEXGE</p>
-        <p>SISTEMA DE DESARROLLO TECNOLÓGICO</p>
+    <div class="footer">
+        SISTEMA DESARROLLADO POR ALEXGE TECNOLOGÍA 💰
     </div>
 
 </body>
-</html>    
+</html>
