@@ -33,10 +33,32 @@
         .highlight { color: #7FDBFF; font-weight: bold; text-align: right; }
      <div class="video-container">
        <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/nG74vjaMLaA?autoplay=1&mute=1" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
+      /* Contenedor Limpio de Video */
+        .video-container { 
+            width: 95%; 
+            max-width: 850px; 
+            margin: 20px auto; 
+            border: 4px solid #0074D9; /* Borde sólido azul rey */
+            border-radius: 20px; 
+            overflow: hidden; 
+            background: #000; 
+            box-shadow: 0 0 30px #0074D9; 
+        }
+
+        .video-wrapper { 
+            position: relative; 
+            padding-bottom: 56.25%; 
+            height: 0; 
+            overflow: hidden; /* Esto corta lo que sobra */
+        }
+
+        .video-wrapper iframe { 
+            position: absolute; 
+            top: -60px; /* Sube el video para ocultar el título de arriba */
+            left: 0; 
+            width: 100%; 
+            height: calc(100% + 120px); /* Agranda el video para compensar el corte */
+        }
         </iframe>
     </div>
 </div>
