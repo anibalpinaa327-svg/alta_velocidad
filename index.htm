@@ -9,14 +9,14 @@
         .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 15px; box-shadow: 0 4px 15px #0074D966; }
         marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
         
-        /* Contenedor de la Invitación de Julio */
+        /* Contenedor de Video con Neón */
         .promo-container { 
             width: 95%; max-width: 850px; margin: 20px auto; 
             border: 5px solid #0074D9; border-radius: 20px; 
-            overflow: hidden; background: #0f172a; 
+            overflow: hidden; background: #000; 
             box-shadow: 0 0 35px #0074D9; 
         }
-        .promo-img { width: 100%; display: block; height: auto; }
+        video { width: 100%; display: block; height: auto; border-radius: 15px; }
 
         .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 10px; gap: 10px; }
         .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; }
@@ -36,10 +36,13 @@
 <body>
 
     <div class="header"><h1>🚀 ALEXGE SISTEMA TECNOLÓGICO</h1></div>
-    <marquee>¡BIENVENIDOS! LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES - VALENCIA, CARABOBO ⚾</marquee>
+    <marquee>¡PLAY BALL! LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES - VALENCIA, CARABOBO ⚾</marquee>
 
     <div class="promo-container">
-        <img src="amigosjulio.jpg" alt="Invitación Julio Cesar Mariche" class="promo-img">
+        <video autoplay loop muted playsinline controls>
+            <source src="amigosjulio.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
     </div>
 
     <a href="https://wa.me/584124119327" class="btn-whatsapp">📲 ÚNETE AL GRUPO DE WHATSAPP</a>
