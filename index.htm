@@ -3,67 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta Velocidad - Estadísticas Oficiales</title>
+    <title>ALEXGE - Alta Velocidad</title>
     <style>
-        /* Contenedor Limpio de Video */
-        .video-container { 
-            width: 95%; 
-            max-width: 850px; 
-            margin: 20px auto; 
-            border: 4px solid #0074D9; /* Borde sólido azul rey */
-            border-radius: 20px; 
-            overflow: hidden; 
-            background: #000; 
-            box-shadow: 0 0 30px #0074D9; 
-        }
-        <div class="video-container"> <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/nG74vjaMLaA?autoplay=1&mute=1" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-        </iframe>
-    </div>
-</div>
         body { background-color: #020617; color: #f8fafc; font-family: 'Arial', sans-serif; margin: 0; text-align: center; }
         .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 15px; box-shadow: 0 4px 15px #0074D966; }
         marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
-        <video width="100%" height="100%" controls autoplay muted style="border: none; position: absolute; top: 0; left: 0;">
-  <source src="jpg.julio.mp4" type="video/mp4">
-  Tu navegador no puede reproducir este video. <a href="jpg.julio.mp4" style="color: #0074D9;">Haz clic aquí para descargarlo.</a>
-</video>
-     <video width="100%" height="100%" controls autoplay muted style="border: none; position: absolute; top: 0; left: 0;">
-  <source src="jpg.julio.mp4" type="video/mp4">
-  Tu navegador no puede reproducir este video. <a href="jpg.julio.mp4" style="color: #0074D9;">Haz clic aquí para descargarlo.</a>
-</video> 
+        
+        .video-container { 
+            width: 95%; max-width: 850px; margin: 20px auto; 
+            border: 5px solid #0074D9; border-radius: 20px; 
+            overflow: hidden; background: #000; box-shadow: 0 0 35px #0074D9; 
+        }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .video-wrapper iframe { position: absolute; top: -65px; left: 0; width: 100%; height: calc(100% + 130px); }
+
+        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 10px; gap: 10px; }
+        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 10px; width: 45%; min-width: 300px; box-sizing: border-box; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.85em; margin-top: 5px; }
+        th { background: #0074D9; padding: 6px; color: white; text-align: left; }
+        td { border-bottom: 1px solid #1e293b; padding: 6px; text-align: left; }
+        .highlight { color: #7FDBFF; font-weight: bold; text-align: right; }
+    </style>
 </head>
 <body>
-
-    <div class="header"><h1>🚀 ALTA VELOCIDAD</h1></div>
-    <marquee>RESULTADOS EN VIVO - PATROCINADO POR ALEXGE SISTEMA DE DESARROLLO TECNOLÓGICO 💰</marquee>
+    <div class="header"><h1>🚀 ALEXGE SISTEMA TECNOLÓGICO</h1></div>
+    <marquee>ALTA VELOCIDAD - ESTADÍSTICAS ACTUALIZADAS 💰</marquee>
 
     <div class="video-container">
         <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/tXbPI-ySpxQ?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/nG74vjaMLaA?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
 
     <div class="main-container">
         <div class="box">
-            <h3>🏆 LÍDER LANZADOR (JG)</h3>
+            <h3>🏆 LÍDERES DEL SISTEMA</h3>
             <table>
-                <tr><th>LANZADOR</th><th style="text-align:right">JG</th></tr>
-                <tr><td>Julio Mariche</td><td class="highlight">1</td></tr>
-                <tr><td>Alexis Piña</td><td class="highlight">1</td></tr>
-                <tr><td>geminis</td><td class="highlight">8</td></tr>
+                <tr><th>NOMBRE</th><th style="text-align:right">JG</th></tr>
+                <tr><td>Alexis Piña</td><td class="highlight">12</td></tr> <tr><td>Julio Mariche</td><td class="highlight">10</td></tr>
             </table>
         </div>
-
-        <div class="box">
-            <h3>🔥 LÍDER K (PONCHES)</h3>
-            <table>
-                <tr><th>LANZADOR</th><th style="text-align:right">K</th></tr>
-                <tr><td>geminis</td><td class="highlight">78</td></tr>
-                <tr><td>geminis</td><td class="highlight">50</td></tr>
-                <tr><td>geminis</td><td class="highlight">48</td></tr>
-            </table>
-        </div>
+    </div>
+</body>
+</html>
