@@ -9,36 +9,47 @@
         .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 15px; box-shadow: 0 4px 15px #0074D966; }
         marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
         
-        /* Contenedor de Video con Neón */
-        .promo-container { 
-            width: 95%; max-width: 850px; margin: 20px auto; 
-            border: 5px solid #0074D9; border-radius: 20px; 
+        /* Contenedor de Video MP4 con Neón */
+        .video-container { 
+            width: 95%; max-width: 800px; margin: 20px auto; 
+            border: 4px solid #0074D9; border-radius: 20px; 
             overflow: hidden; background: #000; 
-            box-shadow: 0 0 35px #0074D9; 
+            box-shadow: 0 0 30px #0074D9; 
         }
-        video { width: 100%; display: block; height: auto; border-radius: 15px; }
+        video { width: 100%; display: block; height: auto; }
 
-        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 10px; gap: 10px; }
-        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; }
+        .main-container { 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            padding: 10px; gap: 20px; max-width: 1000px; margin: 0 auto;
+        }
         
-        table { width: 100%; border-collapse: collapse; font-size: 1.1em; margin-top: 10px; }
-        th { background: #0074D9; padding: 10px; color: white; text-align: left; }
-        td { border-bottom: 1px solid #1e293b; padding: 10px; text-align: left; }
-        .highlight { color: #7FDBFF; font-weight: bold; text-align: right; }
+        .box { 
+            background: #0f172a; border: 2px solid #0074D9; border-radius: 15px; 
+            padding: 15px; width: 90%; max-width: 400px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 1em; margin-top: 10px; }
+        th { background: #0074D9; padding: 10px; color: white; text-align: left; border-radius: 5px 0 0 5px; }
+        th:last-child { border-radius: 0 5px 5px 0; }
+        td { border-bottom: 1px solid #1e293b; padding: 12px 10px; text-align: left; }
+        .highlight { color: #7FDBFF; font-weight: bold; text-align: right; font-size: 1.2em; }
         
         .btn-whatsapp { 
             display: inline-block; background: #25d366; color: white; padding: 15px 30px; 
             text-decoration: none; border-radius: 50px; font-weight: bold; margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); font-size: 1.2em;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); font-size: 1.1em;
+            transition: 0.3s;
         }
+        .btn-whatsapp:hover { transform: scale(1.05); background: #1ebe57; }
     </style>
 </head>
 <body>
 
     <div class="header"><h1>🚀 ALEXGE SISTEMA TECNOLÓGICO</h1></div>
-    <marquee>¡PLAY BALL! LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES - VALENCIA, CARABOBO ⚾</marquee>
+    <marquee>ESTADÍSTICAS OFICIALES - LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES ⚾</marquee>
 
-    <div class="promo-container">
+    <div class="video-container">
         <video autoplay loop muted playsinline controls>
             <source src="amigosjulio.mp4" type="video/mp4">
             Tu navegador no soporta videos.
@@ -49,14 +60,4 @@
 
     <div class="main-container">
         <div class="box">
-            <h3>🏆 TABLA DE LÍDERES</h3>
-            <table>
-                <tr><th>LANZADOR</th><th style="text-align:right">JG</th></tr>
-                <tr><td>Alexis Piña</td><td class="highlight">12</td></tr>
-                <tr><td>Julio Mariche</td><td class="highlight">10</td></tr>
-            </table>
-        </div>
-    </div>
-
-</body>
-</html>
+            <h3 style="color: #0074D9; margin-top: 0;">🏆 LÍDERES PITCHEO (JG)</h3>
