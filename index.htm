@@ -9,60 +9,51 @@
         .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 15px; box-shadow: 0 4px 15px #0074D966; }
         marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
         
-        /* Contenedor de Video Limpio */
-        .video-container { 
-            width: 95%; max-width: 850px; margin: 20px auto; 
-            border: 5px solid #0074D9; border-radius: 20px; 
-            overflow: hidden; background: #000; box-shadow: 0 0 30px #0074D9; 
-        }
-        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
-        .video-wrapper iframe { position: absolute; top: -65px; left: 0; width: 100%; height: calc(100% + 130px); }
-
-        /* Sección de Invitación y Fotos */
+        /* Contenedor de la Invitación (Sustituye al video) */
         .promo-container { 
             width: 95%; max-width: 850px; margin: 20px auto; 
-            background: #0f172a; border: 3px solid #7FDBFF; border-radius: 15px; padding: 15px;
+            border: 5px solid #0074D9; border-radius: 20px; 
+            overflow: hidden; background: #0f172a; 
+            box-shadow: 0 0 35px #0074D9; 
         }
-        .promo-img { width: 100%; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 0 15px #7FDBFF66; }
-        
+        .promo-img { width: 100%; display: block; height: auto; }
+
         .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 10px; gap: 10px; }
-        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 10px; width: 45%; min-width: 300px; }
+        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; }
         
-        table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
-        th { background: #0074D9; padding: 8px; color: white; }
-        td { border-bottom: 1px solid #1e293b; padding: 8px; text-align: left; }
+        table { width: 100%; border-collapse: collapse; font-size: 1em; margin-top: 10px; }
+        th { background: #0074D9; padding: 10px; color: white; text-align: left; }
+        td { border-bottom: 1px solid #1e293b; padding: 10px; text-align: left; }
         .highlight { color: #7FDBFF; font-weight: bold; text-align: right; }
         
         .btn-whatsapp { 
-            display: inline-block; background: #25d366; color: white; padding: 12px 25px; 
-            text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 10px;
+            display: inline-block; background: #25d366; color: white; padding: 15px 30px; 
+            text-decoration: none; border-radius: 50px; font-weight: bold; margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
         }
     </style>
 </head>
 <body>
 
     <div class="header"><h1>🚀 ALEXGE SISTEMA TECNOLÓGICO</h1></div>
-    <marquee>¡INVITACIÓN ESPECIAL! LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES - VALENCIA, CARABOBO ⚾</marquee>
-
-    <div class="video-container">
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/nG74vjaMLaA?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
+    <marquee>LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES - VALENCIA, CARABOBO ⚾</marquee>
 
     <div class="promo-container">
-        <h2 style="color: #7FDBFF;">¡VEN A JUGAR CON NOSOTROS!</h2>
-        <p>Julio Cesar Mariche te invita a participar en la liga más prestigiosa de Valencia.</p>
-        <img src="invitacion.png" alt="Invitación Liga Central 60+" class="promo-img">
-        <a href="https://wa.me/584XXXXXXXXX" class="btn-whatsapp">📲 INSCRIBE A TU EQUIPO AQUÍ</a>
+        <img src="invitacion.png" alt="Invitación Julio Cesar Mariche" class="promo-img">
     </div>
+
+    <a href="https://wa.me/584XXXXXXXXX" class="btn-whatsapp">📲 ÚNETE AL GRUPO DE WHATSAPP</a>
 
     <div class="main-container">
         <div class="box">
-            <h3>🏆 LÍDERES (JG)</h3>
+            <h3>🏆 ESTADÍSTICAS DE LIGA</h3>
             <table>
                 <tr><th>LANZADOR</th><th style="text-align:right">JG</th></tr>
                 <tr><td>Alexis Piña</td><td class="highlight">12</td></tr>
                 <tr><td>Julio Mariche</td><td class="highlight">10</td></tr>
             </table>
         </div>
+    </div>
+
+</body>
+</html>
