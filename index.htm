@@ -3,80 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta Velocidad - Licitación Oficial</title>
+    <title>ALEXGE - Alta Velocidad</title>
     <style>
-        body { background-color: #020617; color: #f8fafc; font-family: 'Arial', sans-serif; margin: 0; text-align: center; }
-        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 20px; box-shadow: 0 4px 15px #0074D966; }
-        marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
+        /* Estilo Base - Arquitectura de Alto Nivel */
+        body { background-color: #020617; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; text-align: center; }
+        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 20px; box-shadow: 0 4px 20px #0074D988; border-bottom: 3px solid #7FDBFF; }
+        h1 { margin: 0; font-size: 2em; letter-spacing: 2px; }
+        marquee { background: #0074D9; color: white; padding: 10px; font-weight: bold; border-bottom: 2px solid #7FDBFF; }
         
-        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 15px; gap: 15px; }
-        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; box-sizing: border-box; }
-        
-        /* Video/Foto Jugada del Día */
-        .video-box { width: 95%; margin: 10px auto; background: #000; border: 3px solid #7FDBFF; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 15px; overflow: hidden; }
-        
-        table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
-        th { background: #0074D9; padding: 8px; }
-        td { border-bottom: 1px solid #1e293b; padding: 8px; }
+        /* Contenedor de Video "Ohtani Clean Mode" */
+        .video-container { 
+            width: 95%; max-width: 850px; margin: 25px auto; 
+            border: 6px solid #0074D9; border-radius: 25px; 
+            overflow: hidden; background: #000; box-shadow: 0 0 40px #0074D9; 
+        }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .video-wrapper iframe { 
+            position: absolute; 
+            top: -65px; /* Oculta el título de YouTube */
+            left: 0; 
+            width: 100%; 
+            height: calc(100% + 130px); /* Compensa el recorte */
+        }
 
-        .invitacion { background: #1e293b; border-left: 5px solid #7FDBFF; text-align: left; padding: 10px; margin-top: 10px; }
-        .foto-mariche { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #7FDBFF; float: right; }
+        /* Contenedor de Estadísticas */
+        .main-container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; gap: 20px; }
+        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 15px; padding: 15px; width: 45%; min-width: 320px; box-shadow: 5px 5px 15px rgba(0,0,0,0.5); }
+        h3 { color: #7FDBFF; border-bottom: 1px solid #0074D9; padding-bottom: 10px; margin-top: 0; }
         
-        .next-game { font-weight: bold; color: #7FDBFF; font-size: 1.1em; }
-        .footer { padding: 20px; background: #000; color: #0074D9; font-weight: bold; border-top: 2px solid #0074D9; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+        th { background: #1e293b; padding: 10px; color: #7FDBFF; text-align: left; }
+        td { border-bottom: 1px solid #1e293b; padding: 10px; text-align: left; }
+        .highlight { color: #00ffcc; font-weight: bold; text-align: right; font-size: 1.1em; }
+        .rank { color: #94a3b8; font-weight: bold; padding-right: 10px; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>🚀 ALTA VELOCIDAD</h1>
-    </div>
+    <div class="header"><h1>🚀 ALEXGE SISTEMA TECNOLÓGICO</h1></div>
+    <marquee>⚾ ALTA VELOCIDAD - MONITOREO DE DESEMPEÑO PROFESIONAL - PATROCINADO POR ALEXIS PIÑA 💰</marquee>
 
-    <marquee>¡LA JUGADA DEL DÍA! - PRÓXIMOS ENCUENTROS - NACIONAL CENTRAL 69 Y MÁS</marquee>
-
-    <div class="video-box">
-        <p>🎬 [AQUÍ VA EL VÍDEO O FOTO DE LA JUGADA]</p>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/tXbPI-ySpxQ?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
+    </div>
 
     <div class="main-container">
         
         <div class="box">
-            <h3>🏆 LÍDERES BATEO</h3>
+            <h3>🏆 LÍDERES LANZADORES (JG)</h3>
             <table>
-                <tr><th>JUGADOR</th><th>AVG</th></tr>
-                <tr><td>Líder 1</td><td>.450</td></tr>
-                <tr><td>Líder 2</td><td>.420</td></tr>
+                <tr><th># LANZADOR</th><th style="text-align:right">JG</th></tr>
+                <tr><td><span class="rank">1.</span> Alexis Piña</td><td class="highlight">12</td></tr>
+                <tr><td><span class="rank">2.</span> Julio Mariche</td><td class="highlight">10</td></tr>
+                <tr><td><span class="rank">3.</span> José Goncalvez</td><td class="highlight">8</td></tr>
             </table>
         </div>
 
         <div class="box">
-            <h3>📅 PRÓXIMO JUEGO</h3>
-            <p class="next-game">CARABOBO vs GUARICO</p>
-            <p>📍 Sede: Guarico<br>🗓️ 16/02/26 | ⏰ 10:00 AM</p>
-        </div>
-
-        <div class="box">
-            <h3>🔥 LÍDERES JONRONES</h3>
+            <h3>🔥 LÍDERES EN K (PONCHES)</h3>
             <table>
-                <tr><th>JUGADOR</th><th>HR</th></tr>
-                <tr><td>Líder 1</td><td>12</td></tr>
-                <tr><td>Líder 2</td><td>10</td></tr>
+                <tr><th># LANZADOR</th><th style="text-align:right">K</th></tr>
+                <tr><td><span class="rank">1.</span> José Goncalvez</td><td class="highlight">85</td></tr>
+                <tr><td><span class="rank">2.</span> Alexis Piña</td><td class="highlight">72</td></tr>
+                <tr><td><span class="rank">3.</span> Pedro Martínez</td><td class="highlight">64</td></tr>
             </table>
         </div>
 
-        <div class="box">
-            <img src="URL_FOTO_MARICHE" alt="Julio Mariche" class="foto-mariche">
-            <div class="invitacion">
-                <strong>Julio Mariche</strong> te invita al:
-                <p style="color:#7FDBFF">CAMPEONATO NACIONAL CENTRAL 69 Y MÁS</p>
-            </div>
-        </div>
-
     </div>
 
-    <div class="footer">
-        SISTEMA DESARROLLADO POR ALEXGE TECNOLOGÍA 💰
-    </div>
+    <p style="color: #475569; margin-bottom: 30px;">© 2026 ALEXGE - Ingeniería en Sistemas y Automatización</p>
 
 </body>
 </html>
