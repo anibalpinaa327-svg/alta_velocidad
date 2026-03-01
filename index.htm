@@ -3,56 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALEXGE - Liga Central 60+</title>
+    <title>Alta Velocidad - Licitación Oficial</title>
     <style>
         body { background-color: #020617; color: #f8fafc; font-family: 'Arial', sans-serif; margin: 0; text-align: center; }
-        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 15px; box-shadow: 0 4px 15px #0074D966; }
+        .header { background: linear-gradient(135deg, #001f3f, #0074D9); padding: 20px; box-shadow: 0 4px 15px #0074D966; }
         marquee { background: #0074D9; color: white; padding: 8px; font-weight: bold; }
         
-        /* Contenedor de la Invitación de Julio */
-        .promo-container { 
-            width: 95%; max-width: 850px; margin: 20px auto; 
-            border: 5px solid #0074D9; border-radius: 20px; 
-            overflow: hidden; background: #0f172a; 
-            box-shadow: 0 0 35px #0074D9; 
-        }
-        .promo-img { width: 100%; display: block; height: auto; }
+        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 15px; gap: 15px; }
+        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; box-sizing: border-box; }
+        
+        /* Video/Foto Jugada del Día */
+        .video-box { width: 95%; margin: 10px auto; background: #000; border: 3px solid #7FDBFF; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 15px; overflow: hidden; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+        th { background: #0074D9; padding: 8px; }
+        td { border-bottom: 1px solid #1e293b; padding: 8px; }
 
-        .main-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 10px; gap: 10px; }
-        .box { background: #0f172a; border: 2px solid #0074D9; border-radius: 12px; padding: 15px; width: 45%; min-width: 300px; }
+        .invitacion { background: #1e293b; border-left: 5px solid #7FDBFF; text-align: left; padding: 10px; margin-top: 10px; }
+        .foto-mariche { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #7FDBFF; float: right; }
         
-        table { width: 100%; border-collapse: collapse; font-size: 1.1em; margin-top: 10px; }
-        th { background: #0074D9; padding: 10px; color: white; text-align: left; }
-        td { border-bottom: 1px solid #1e293b; padding: 10px; text-align: left; }
-        .highlight { color: #7FDBFF; font-weight: bold; text-align: right; }
-        
-        .btn-whatsapp { 
-            display: inline-block; background: #25d366; color: white; padding: 15px 30px; 
-            text-decoration: none; border-radius: 50px; font-weight: bold; margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); font-size: 1.2em;
-        }
+        .next-game { font-weight: bold; color: #7FDBFF; font-size: 1.1em; }
+        .footer { padding: 20px; background: #000; color: #0074D9; font-weight: bold; border-top: 2px solid #0074D9; margin-top: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="header"><h1>🚀 ALEXGE SISTEMA TECNOLÓGICO</h1></div>
-    <marquee>¡BIENVENIDOS! LIGA CENTRAL 60 Y + DE SOFTBOLL SESEMTONES - VALENCIA, CARABOBO ⚾</marquee>
-
-    <div class="promo-container">
-        <img src="amigosjulio.jpg" alt="Invitación Julio Cesar Mariche" class="promo-img">
+    <div class="header">
+        <h1>🚀 ALTA VELOCIDAD</h1>
     </div>
 
-    <a href="https://wa.me/584124119327" class="btn-whatsapp">📲 ÚNETE AL GRUPO DE WHATSAPP</a>
+    <marquee>¡LA JUGADA DEL DÍA! - PRÓXIMOS ENCUENTROS - NACIONAL CENTRAL 69 Y MÁS</marquee>
+
+    <div class="video-box">
+        <p>🎬 [AQUÍ VA EL VÍDEO O FOTO DE LA JUGADA]</p>
+        </div>
 
     <div class="main-container">
+        
         <div class="box">
-            <h3>🏆 TABLA DE LÍDERES</h3>
+            <h3>🏆 LÍDERES BATEO</h3>
             <table>
-                <tr><th>LANZADOR</th><th style="text-align:right">JG</th></tr>
-                <tr><td>Alexis Piña</td><td class="highlight">12</td></tr>
-                <tr><td>Julio Mariche</td><td class="highlight">10</td></tr>
+                <tr><th>JUGADOR</th><th>AVG</th></tr>
+                <tr><td>Líder 1</td><td>.450</td></tr>
+                <tr><td>Líder 2</td><td>.420</td></tr>
             </table>
         </div>
+
+        <div class="box">
+            <h3>📅 PRÓXIMO JUEGO</h3>
+            <p class="next-game">CARABOBO vs GUARICO</p>
+            <p>📍 Sede: Guarico<br>🗓️ 16/02/26 | ⏰ 10:00 AM</p>
+        </div>
+
+        <div class="box">
+            <h3>🔥 LÍDERES JONRONES</h3>
+            <table>
+                <tr><th>JUGADOR</th><th>HR</th></tr>
+                <tr><td>Líder 1</td><td>12</td></tr>
+                <tr><td>Líder 2</td><td>10</td></tr>
+            </table>
+        </div>
+
+        <div class="box">
+            <img src="URL_FOTO_MARICHE" alt="Julio Mariche" class="foto-mariche">
+            <div class="invitacion">
+                <strong>Julio Mariche</strong> te invita al:
+                <p style="color:#7FDBFF">CAMPEONATO NACIONAL CENTRAL 69 Y MÁS</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        SISTEMA DESARROLLADO POR ALEXGE TECNOLOGÍA 💰
     </div>
 
 </body>
